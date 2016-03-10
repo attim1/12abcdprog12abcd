@@ -1,0 +1,172 @@
+body
+{
+  font-size: 18pt;
+}
+
+#text_nDomanda{
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight:bold;
+  text-align: center;
+  font: 40px Verdana;
+  background-color: #AEACFC;
+  border: 3px solid green;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#textPunti{
+  padding-top: 8px;
+  padding-bottom: 9px;
+  font-weight:bold;
+  text-align: center;
+  font: 45px Georgia;
+  background-color: yellow;
+  border: 2px solid green;
+  border-radius: 18px 18px 18px 18px;
+}
+
+#textDomanda {
+  text-align: center;
+  padding-top: 19px;
+  padding-bottom: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: 'Arial', serif;
+  font-weight: normal;
+  line-height: 58px;
+  font-size: 40px;
+  background-color: yellow;
+  border: 5px solid green;
+  border-radius: 10px 10px 10px 10px;
+  display : block;
+  width : 918px;
+  height : 126px;
+  overflow: auto;
+
+}
+
+#buttons {
+  padding-top: 10px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 13px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  padding: 15px 25px;
+  font-size: 29px;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  margin: 0px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+}
+
+.btn:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+.orange {
+  background-color: #e67e22;
+  box-shadow: 0px 5px 0px 0px #CD6509;
+}
+
+.orange:hover {
+  background-color: #FF983C;
+}
+
+.border_radius {
+ border-radius: 10px 10px 10px 10px;
+ margin-bottom: 40px;
+ width: 600px;
+ height: 80px;
+ margin-left: 20px;
+ margin-right: 20px;
+}
+
+/*##################################*/
+
+#buttonprossima{
+  padding-top: 0px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+.btn2 {
+  display: inline-block;
+  font-size: 29px;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  border: 1px solid transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+}
+
+.btn2:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+.orange2 {
+  background-color: #e67e22;
+  box-shadow: 0px 0px 0px 0px #CD6509;
+}
+
+.orange2:hover {
+  background-color: #FF983C;
+}
+
+.border_radius2 {
+ border-radius: 10px 10px 10px 10px;
+ width: 90px;
+ height: 130px;
+ margin-top: 0px;
+ margin-bottom: 0px;
+ margin-left: 0px;
+ margin-right: 0px;
+}
+
+#testoNext{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-family: 'Arial', serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: 0px;
+  color: orange;
+}
+/*#############################à
+#############################à  1024x768 
+##############################
+*/
+#t{
+position:absolute;
+width:1200px;
+height:768px;
+}
