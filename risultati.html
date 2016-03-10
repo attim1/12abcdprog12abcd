@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/styles.css" rel="stylesheet">
+	<title>QUIZ - RESULTS - </title>
+  </head>
+  <body style="background-image:url(w.jpg)" onload="risultato()">
+  
+  <div id="t">
+  <center>
+  <h1><b> <font color="orange"> QUIZ RESULTS </font></b></h1>
+  <br>
+  <table bgcolor="yellow" width="40%">
+  <tr>
+  <td align="center">
+  <div id="marrrr" style="font-size: 22pt">
+  <input type="button" name="button1" value="TRY THE QUIZZ AGAIN" onclick="location.href='index.html'"/>
+  <p> Your final mark is: </p>
+  </div>
+  <div id="result" style="font-size: 38pt">
+  </div>
+  <br>
+  <img src="" id="immagine"/>
+  <br><br>
+  <input type="button" name="button1" value="TRY THE QUIZZ AGAIN" onclick="location.href='index.html'"/>
+  <br>
+	</td>
+	</tr>
+	</table>
+	</center>
+</div>
+		
+<!--
+		*******************************
+		### SCRIPT - SCRIPT - SCRIPT ###
+		*******************************
+-->
+<script type="text/javascript">
+	function risultato(){
+	
+	var punti = localStorage.getItem("score");
+	
+	var testoRisultato = document.getElementById('result');
+	testoRisultato.textContent = punti + "/40";
+	
+	var img = window.document.getElementById("immagine");
+	
+	var bene= "good.jpg";
+	var benino = "mmm.jpg";
+	var male = "noo.jpg";
+	
+	if( punti > 29){
+	img.src = bene;
+	}
+	if (punti > 18 && punti < 30){
+	img.src = benino;
+	}
+	if (punti < 19){
+	img.src= male;
+	}
+
+	}
+
+</script>
+  </body>
+</html>	

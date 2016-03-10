@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<script type="text/javascript" src="js/jquery.js"></script>
+    <link href="css/styles.css" rel="stylesheet">
+	<link href="css/styles2.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/animation.css" rel="stylesheet">
+	<title>ENGLISH QUIZ </title>
+	<script type="text/javascript" src="js/casella.js"></script>
+	<script type="text/javascript" src="js/animazioni.js"></script>
+	<script type="text/javascript" src="js/questions.js"></script>
+	<script type="text/javascript" src="js/domCorrette.js"></script>
+	<script type="text/javascript" src="js/descrizione.js"></script>
+	
+  </head>
+  <body style="background-image:url(sfondo.jpg)">
+  <div id="t">
+  
+  <table width=100% border=0 cellpadding=4 cellspacing=3 style="page-break-before: always; page-break-inside: avoid">
+	<col width=226*>
+	<col width=30*>
+	<tr valign=center>
+	
+		<td rowspan=2 width=86%>
+			<div id="dm">	
+				<div id="textDomanda">How many <b>countries</b> speak English as a first or a second language?</div>
+			
+				<p></p>
+			</div>	
+		</td>
+	
+		<td width=12%>
+			<div id="text_nDomanda">1</div>
+		</td>
+	</tr>
+	<tr valign=center>
+		<td width=14%>
+			<div id="textPunti">0/32</div>
+		</td>
+	</tr>
+</table>
+<table width=100% border=0 cellpadding=4 cellspacing=3 style="page-break-before: always; page-break-inside: avoid">
+	<col width=217*>
+	<col width=39*>
+	<tr>
+		<td width=0%>
+		<!--INIZIO DESCRIZIONE POPUP -->
+			<div id="fpol">
+				<div class="finestra">
+					<div class="chiudi"><a id="chiudi_fpol" href="#"><img src="close.png"/></a></div>
+					<center>
+					<div id="desc_w" class="testo">DESCRIZIONE QUI <BR> DESCRIZIONE QUI <BR> DESCRIZIONE QUI <BR> DESCRIZIONE QUI <BR> </div>
+					</center>
+				</div>
+			</div>
+		<!-- FINE DESCRIZIONE POPUP -->
+		</td>
+		<td width=83% valign=top>
+		<form name="form1">
+		  <p></p>
+		  <div id="buttons">
+			<div id="dm1">
+				<input type="button" name="button1" class="btn orange border_radius button1" value="100"/><br>
+			</div>
+			<div id="dm2">
+				<input type="button" name="button2" class="btn orange border_radius button2" value="75"/> <br>
+			</div>
+			<div id="dm3">
+			<input type="button" name="button3" class="btn orange border_radius button3" value="40"/>
+			</div>
+		  </div>
+		</form>
+		</td>
+		<td width=17%>
+		<form name="form2">
+			<!--INIZIO DESCRIZIONE BOTTONE -->
+				<div id="apri_des" class="apri" style="display:none">&nbsp <a id="apri_fpol" class="apri" href="#">MORE DETAILS</a>&nbsp </div>
+			<!-- FINE DESCRIZIONE BOTTONE -->
+			<div id="testoNext" style="display:none">	
+			<center>
+			<p>NEXT <br> QUESTION</p>
+			</center>
+			</div>
+			<div id="buttonprossima">
+			<input type="button" name="next" style="display:none" class="btn2 orange2 border_radius2" value=" > > >"/>
+			</div>
+		</form>
+		</td>
+	</tr>
+</table>
+
+</div>
+		<!--<div id="textRisultato"> Esito domanda: ...</div>-->
+
+<script type="text/javascript" src="js/scripts.js"></script>
+
+  </body>
+</html>		
