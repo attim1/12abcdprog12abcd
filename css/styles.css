@@ -76,20 +76,9 @@ body
        -o-user-select: none;
           user-select: none;
 }
-
-.btn:active {
-  transform: translate(0px, 5px);
-  -webkit-transform: translate(0px, 5px);
-  box-shadow: 0px 1px 0px 0px;
-}
-
 .orange {
   background-color: #e67e22;
   box-shadow: 0px 5px 0px 0px #CD6509;
-}
-
-.orange:hover {
-  background-color: #FF983C;
 }
 
 .border_radius {
@@ -135,10 +124,6 @@ body
 .orange2 {
   background-color: #e67e22;
   box-shadow: 0px 0px 0px 0px #CD6509;
-}
-
-.orange2:hover {
-  background-color: #FF983C;
 }
 
 .border_radius2 {
