@@ -1,37 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  <script type="text/javascript" src="js/jquery.js"></script>
-    <link href="css/styles.css" rel="stylesheet">
-	<link href="css/stylesIndex.css" rel="stylesheet">
-	<link href="css/animate.css" rel="stylesheet">
-	<title>QUIZ </title>
-	<script type="text/javascript" src="js/indexAnimation.js"></script>
-  </head>
-  <body style="background-image:URL(images/background/sfondo.jpg);">
-  <center>
-  <div id="ind">
-	<h1 class="jj1"> -------------------------------------------</h1>
-	<h1 class="jj2"> QUIZ </h1>
-	<h1 class="jj3"> -------------------------------------------</h1>
-	</div>
-	<table width="40%">
-        <tr>
-            <td align="center">
-                <h6>Inserisci il tuo nome</h6>
-                <input type="text">
-                <a href="">Vedi classifica</a>
-            </td>
-        </tr>
-		<tr>
-			<td align="center">
-		<input type="button" name="button1" class="btn orange border_radius indexButton" onclick="start('.indexButton'); start2('.jj1'); start2('.jj3'); start3('.jj2')" value="START" /><br>
-			</td>
-		</tr>
+    <head>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="css/stylesIndex.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+        <title>QUIZ </title>
+        <script type="text/javascript" src="js/indexAnimation.js"></script>
+    </head>
+    <body style="background-image:URL(images/background/sfondo.jpg);">
+        <center>
+            <div id="ind">
+                <h1 class="jj1"> -------------------------------------------</h1>
+                <h1 class="jj2"> QUIZ </h1>
+                <h1 class="jj3"> -------------------------------------------</h1>
+            </div>
+            <div id="insName">
+                <span class="input input--haruki">
+                    <input class="input__field input__field--haruki" type="text" id="input-1" />
+                    <label class="input__label input__label--haruki" for="input-1">
+                        <span class="input__label-content input__label-content--haruki">Inserisci il tuo nome</span>
+                    </label>
+                </span>
+            </div>
+            <div id="startA">
+                <input type="button" name="button1" class="btn orange border_radius indexButton" onclick="start('.indexButton'); start2('.jj1'); start2('.jj3'); start3('.jj2')" value="START" /><br>
+            </div>
 
-	</table>
 
-      
-  </center>
-  </body>
+        </center>
+    </body>
 </html>	
