@@ -21,11 +21,10 @@
 	<col width=226*>
 	<col width=30*>
 	<tr valign=center>
-	
+	<!--domanda-->
 		<td rowspan=2 width=86%>
 			<div id="dm">	
                 <div id="textDomanda">Chi &egrave; il personaggio che col suo baffo part&igrave; per Vertoiba dove mor&igrave; nel lontano 1917?</div>
-			
 				<p></p>
 			</div>	
 		</td>
@@ -60,7 +59,17 @@
 		<form name="form1">
 		  <p></p>
 		  <div id="buttons">
-              <input type="text" id="risposta" class="btn orange border_radius button2">
+              <input type="text" id="rispostaText" class="btn orange border_radius button2">
+              <input type="text" style="display:none" id="rispostaText2" class="btn orange border_radius button2">
+              <div id="yes_or_no">
+                  <input type="button" style="display:none" id="rispostaBtNo" class="btn orange border_radius button2 yn" value="SI">
+                  <input type="button" style="display:none" id="rispostaBtNo" class="btn orange border_radius button2 yn" value="NO">
+              </div>
+		  </div>
+		  <div id="invia">
+             <center>
+                 <input type="button" id="bt_Invia" class="btn orange border_radius button2" value="INVIA">
+              </center>
 		  </div>
 		</form>
 		</td>

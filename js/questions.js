@@ -1,199 +1,101 @@
 var domande = [
 	/*0*/	"0",
-	/*1*/	"1",
-	/*2*/	["How many <b>people</b> speak English as a first or a second language?", 
-				"300 million", 
-				"500 million", 
-				"800 million",   //giusto
-			],  
-	/*3*/	["Which saints do the three crosses of the Union Jack represent?", 
-				"Saint Patrick, Saint George, Saint Andrew",  //giusto
-				"Saint Patrick, Saint John, Saint Andrew",
-				"Saint Peter, Saint George, Saint David",
-			],
-	/*4*/	["Which animal can you see in the Welsh flag?",
-				"The Welsh dragon",  //giusto
-				"The Welsh snake",
-				"The Welsh lion",
-			],
-	/*5*/	["What is Queen Elizabeth's surname?",
-				"Tudor",
-				"Middelton",
-				"Windsor", //giusto
-			],
-	/*6*/	["Where does the word ''sandwich'' come from?",
-				"From the name of a small town in England",
-				"From Lord Sandwich, a British nobleman", //giusta
-				"From the name of an island",
-			],
-	/*7*/	["Who consecrated the ''Cucumber Sandwich'' as the symbol of the British upper class?",
-				"George Orwell",
-				"James Joyce",
-				"Oscar Wilde",  //giusta
-			],
-	/*8*/	["Where can you see the ''Koh-i-noor'', one of the biggest diamonds in the world?",
-				"Capetown",
-				"Amsterdam",
-				"London",  //giusta
-			],
-	/*9*/	["What does ''Koh-i-noor'' mean?",
-				"Mountain of the moon",
-				"Mountain of the sun",
-				"Mountain of light",  //giusta
-			],
-	/*10*/	["Where is ''Hamlet'', Shakespeare's famous tragedy, set?",
-				"In Scotland",
-				"In Denmark",  //giusta
-				"In Ireland",
-			],
-	/*11*/	["Which cake is mentioned in ''A Christmas Carol'', the famous novel by Charles Dickens?",
-				"Cheese cake",
-				"Apple Pie",
-				"Christmas Pudding",  //giusta
-			],
-	/*12*/	["Who wrote ''The Strange Case of Dr. Jekyll and Mr. Hyde''?",
-				"Ernest Hemingway",
-				"William Shakespeare",
-				"Robert Louis Stevenson",  //giusta
-			],
-	/*13*/	["Who is Frankenstein? The protagonist of Mary Shelley's famous novel?",
-				"A doctor who created a monster",  //giusta
-				"A monster created by a doctor",
-				"A vampire",
-			],
-	/*14*/	["What is the main ingredient of Porrige?",
-				"Mushrooms",
-				"Oats",   //giusta
-				"Cheese",
-			],
-	/*15*/	["Who wants some more Porrige (Gruel) in a famous novel by Charles Dickens?",
-				"Oliver Twist",  //giusta
-				"Sissy Jupe",
-				"David Copperfield",
-			],
-	/*16*/	["What is the London Eye?",
-				"A telescope",
-				"A panoramic wheel",  //giusta 
-				"A roller coaster",
-			],
-	/*17*/	["How high is The Shard (Renzo Piano's skyscraper)?",
-				"The Shard is 310m high",  //giusta
-				"The Shard is 410m high",
-				"The Shard is 200m high",
-			],
-	/*18*/	["Which world event took place in London in 2012?",
-				"The Hunger Games",
-				"The Olympic games",  //giusta 
-				"The FIFAWorld cup",
-			],
-	/*19*/	["How many stripes are there in the US flag?",
-				"13 vertical stripes",
-				"15 horizontal stripes",
-				"13 horizontal stripes",  //giusta
-			],
-	/*20*/	["What do the stripes in the US flag represent?",
-				"The most important American presidents",
-				"The original thirteen colonies",  //giusta
-				"The current American states",
-			],
-	/*21*/	["How many stars are there in the US flag?",
-				"64",
-				"50",  //giusta
-				"51",
-			],
-	/*22*/	["What do the stars in US flag represent?",
-				"The number of states in the USA",   //giusta
-				"The number of monuments in the USA",
-				"The number of natural parks in the USA",
-			],
-	/*23*/	["Where was Barack Obama born?",
-				"He was born in Capetown, South Africa",
-				"He was born in New York",  
-				"He was born in Honolulu, Hawaii",   //giusta
-			],
-	/*24*/	["What is the name of the capital city of the USA?",
-				"Miami",
-				"Washington DC",  //giusta
-				"New York",
-			],
-	/*25*/	["What is the capital city of New York State?",
-				"Albany",  //giusta
-				"Buffalo",
-				"New York City",
-			],
-	/*26*/	["What is the capital city of California?",
-				"San Francisco",
-				"Los Angeles",
-				"Sacramento",  //giusta
-			],
-	/*27*/	["Where does the word ''Hot Dog come from?",
-				"From a Pony, a small horse",
-				"From the Dachsumund, a small long dog",  //giusta
-				"From a young goose",
-			],
-	/*28*/	["What is the origin of Ketchup?",
-				"A French sauce made from tomatoes",
-				"A spicy Spanish sauce made from peppers",
-				"A Malasyan sauce made from fish",  //giusta
-			],
-	/*29*/	["Where does the word ''bikini'' come from?",
-				"From the name of Bikini atoll",  //giusta
-				"From an old bicycle",
-				"From the name of a famous actress",
-			],
-	/*30*/	["Which leaf can you see in the Canadian flag?",
-				"A clover leaf",
-				"An oak leaf",
-				"A maple leaf",  //giusta
-			],
-	/*31*/	["What was the coldest temperature in Canada in the winter 2014?",
-				"- 50 degrees C",  //giusta
-				"- 78 degrees C",
-				"- 30 degrees C",
-			],
-	/*32*/	["What are the names of two very popular Canadian singers?",
-				"Lady Gaga; Micheal Buble'",
-				"Celine Dion; Avril Lavigne",  //giusta
-				"Justin Bieber; Robbie Williams",
-			],
-	/*33*/	["What can you see in the flags of Australia and New Zealand?",
-				"The Union Jack",  //giusta
-				"The Welsh flag",
-				"The American flag",
-			],
-	/*34*/	["What do the stars in the flags of Australia and New Zealand represent?",
-				"The isles around the two countries",
-				"The stars in the Milky Way",
-				"The constellation of the Southern Cross", //giusta
-			],
-	/*35*/	["Why is Australia known as ''Land Down Under''?",
-				"Because of its strange geographical form",
-				"Because it is under the Equator",  //giusta
-				"Because it is under the sea level",
-			],
-	/*36*/	["What are koalas fond of?",
-				"Lotus flowers",
-				"Bamboo",
-				"Eucalyptus",  //giusta
-			],
-	/*37*/	["What is the New Zealand national rugby team?",
-				"The All Blacks",  //giusta
-				"The All Reds",
-				"The Chiefs",
-			],
-	/*38*/	["What is the New Zealand national bird?",
-				"The albatross",
-				"The kea",
-				"The kiwi", //giusta
-			],
-	/*39*/	["What is ''HUHU GRUB'', the Traditional Maori food?",
-				"Roasted snails",
-				"Tails of pigs",
-				"Larvae of beetles", //giusta
-			],
-	/*40*/	["Where does the word ''Spam'' come from?",
-				"From a brand of canned chopped meat",  //giusta
-				"From a brand of sneakers",
-				"From a brand of computers",
-			],
+	/*1*/	["1",
+                "Giorgio Rossi", //risposta giusta
+                "Antonio Ciboldi"  //autore
+            ],
+
+    /*2*/	["Quale lapide ha qualcosa in comune con il film ”Caccia ad ottobre rosso” e parla di un nuovo mezzo marittimo?",
+                "Annibale Eugenio", //risposta giusta
+                "Riccardo Pontevichi" //autore
+            ],
+
+    /*3*/	["Quali sono le due lapidi che sono “decorate” con l'immagine di un fucile?",
+                ["Ettore Galli", "Luigi Marconi"],  //risposta giusta
+                "Andrea Marca" //autore
+            ],
+    /*4*/	["In quante lapidi al posto del fucile hanno messo la spada?",
+                ["Quattro", "4"], //risposta giusta
+                "Gianmarco Villani" //autore
+            ],
+    /*5*/	["Trova il caporale del 35° regg. Fanteria disperso durante il fatto d'armi",
+                "Annibale Cassani", //risposta giusta
+                "Luigi Tamb&egrave;" //autore
+            ],
+    /*6*/	["Quali sono i simboli della guerra più ricorrenti nelle decorazioni delle lapidi?",
+                "risposta giusta", //risposta giusta sasdadsdasadsasdsadasdaasdadsasdasdasdasdsadasasdasda da guardare
+                "Matteo Lorandi" //autore
+            ],
+    /*7*/	["Nel nostro cimitero sono sepolti solo i soldati italiani?",
+                "no", //risposta giusta
+                "Matteo Lucini" //autore
+            ],
+    /*8*/	["Quale particolare arma chimica $egrave; stata utilizzata nella prima guerra mondiale? Di quale patriota ha causato la morte?",
+                "i gas asfissiante, Giovanni Bardelli", //risposta giusta aslkdasjsalkadsjasdlkdsajasldkj da guardare
+                "Arianna Grazioli" //autore
+            ],
+    /*9*/	["Chi insegn&ograve; ai suoi compagni la lingua tedesca e fu tra i primi a prestare giuramento nella Guardia Nazionale di Cremona?",
+                "Giuseppe Boselli", //risposta giusta
+                "Letizia Morello" //autore
+            ],
+    /*10*/	["Rinunci&ograve; alla sua giovinezza per un'Italia più grande e morì lontano dai genitori. Chi è ?",
+                "Ernesto Stagnati", //risposta giusta
+                "Valeria Gallo" //autore
+            ],
+    /*11*/	["Chi fu il sottotenente dei bersaglieri che cadde combattendo sul Carnizza?",
+                "Luigi Marconi", //risposta giusta
+                "Stella Gardani" //autore
+            ],
+    /*12*/	["Chi &egrave; il più giovane tra i caduti della prima guerra mondiale nelle fotografie della mostra?",
+                "Giosafat Priori", //risposta giusta
+                "Alessandro Soavi" //autore
+            ],
+    /*13*/	["Chi &egrave; rappresentato sulla sua lapide portando la bandiera italiana nonostante sia nato all'estero?",
+                "Giuseppe Pelegri ", //risposta giusta
+                "Eleonora Ghisolfi" //autore
+            ],
+    /*14*/	["Durante la prima guerra mondiale scomparve nel mare insieme al sommergibile nel quale svolgeva il compito di secondo capo meccanico. Di chi si tratta?",
+                "Annibale Eugenio Amici", //risposta giusta
+                "Irene Ferri" //autore
+            ],
+    /*15*/	["Qual &egrave; il personaggio assistito da “Miss uragano” durante la battaglia del Volturno?",
+                "Francesco Pozzi", //risposta giusta
+                "Marco Racioppi" //autore
+            ],
+    /*16*/	["Tra le foto delle lapidi, ce n'&egrave; una in memoria di due fratelli, entrambi nati a Cremona verso la fine del XIX secolo: uno &grave; stato ucciso da una granata nemica, l'altro &egrave; deceduto a causa di una malattia. Sapresti trovarla?",
+                "I fratelli Ardenghi", //risposta giusta    lkadaslkdasdaslkdjdsalkjdskjsadbadskjdsa da guardare
+                "Marco Fiameni" //autore
+            ],
+    /*17*/	["Chi dopo 30 mesi di guerra mor&igrave; dopo tanti sacrifici il 30 maggio del 1919 all'ospedale Manini?",
+                "Palmiro Balestrieri", //risposta giusta
+                "Filippo Mariani" //autore
+            ],
+    /*18*/	["Schierato per un esercito rivale, disert&ograve; per combattere con l'Italia. Non conosciamo il suo volto. Chi &egrave; ?",
+                "Giuseppe Boselli", //risposta giusta
+                "Gabriele Speroni" //autore
+            ],
+    /*19*/	["Trova quante volte, con i rispettivi nomi dei caduti, è presente sulle lapidi il simbolo dei Savoia rappresentato da una croce e una corona",
+                ["Tre", "3"], //risposta giusta
+                "Simone Marchiaro" //autore
+            ],
+    /*20*/	["Lavor&ograve; come volontario insieme alle crocerossine cremonesi nel 1916, chi fu?",
+                "Angelo Dadomo", //risposta giusta
+                "Anna Cresceri" //autore
+            ],
+    /*21*/	["Chi, molto caro alle sue sorelle, &egrave; raffigurato con l'elmo di Scipio?",
+                "Lavinio Zanacchi ", //risposta giusta
+                "Anna Cresceri" //autore
+            ],
+    /*22*/	["Il giusto dell'anima &egrave; colui che si dona al prossimo, chi &egrave; degno di questo premio?",
+                "Angelo Dadomo", //risposta giusta
+                "Giulia Mazzetti" //autore
+            ],
+    /*23*/	["Chi mor&igrave; con il grado maggiore di cavalleria dopo aver fatto il soldato per 15 anni?",
+                "Enrico Binda", //risposta giusta
+                "Benedetta Bolsi" //autore
+            ],
+    /*24*/	["Quale lapide raffigura due giberne appese allo scudo dei Savoia?", 
+                "Ernesto Lucchini", //risposta giusta
+                "Giovanni Vittori" //autore
+            ],
 ];
