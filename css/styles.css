@@ -59,7 +59,7 @@ body
   margin-bottom: 50px;
   margin-top: 10px;
   padding: 15px 25px;
-  font-size: 29px;
+  font-size: 35px;
   line-height: 1.428571429;
   text-align: center;
   white-space: nowrap;
@@ -76,15 +76,26 @@ body
        -o-user-select: none;
           user-select: none;
 }
+
+.btn:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+}
+
 .orange {
-  background-color: #e67e22;
-  box-shadow: 0px 5px 0px 0px #CD6509;
+    background-color: #e67e22;
+    box-shadow: 0px 5px 0px 0px #CD6509;
+}
+
+.orange:hover {
+    background-color: #FF983C;
 }
 
 .border_radius {
  border-radius: 10px 10px 10px 10px;
  margin-bottom: 40px;
- width: 600px;
+ width: 500px;
  height: 80px;
  margin-left: 20px;
  margin-right: 20px;
@@ -154,4 +165,10 @@ body
 position:absolute;
 width:1200px;
 height:768px;
+}
+
+.yn{
+    width: 150px;
+    height: 115px;
+    font-size: 55px;
 }
