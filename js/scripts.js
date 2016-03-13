@@ -4,8 +4,8 @@ var risultato="giusto";
 var punti = 0;
 var n_Domanda = 1;
 
-	var risposta1 = document.getElementById('rispostatext');
-    var risposta2 = document.getElementById('rispostatext2');
+	var risposta1 = document.getElementById('rispostaText');
+    var risposta2 = document.getElementById('rispostaText2');
 
     var linkDes = document.getElementById('apri_des');
     var bottoneNuova = document.form2["next"];
@@ -17,59 +17,39 @@ var n_Domanda = 1;
     var bottoneSi = document.form1["rispostaBtSi"];
     var bottoneNo = document.form1["rispostaBtNo"];
 
+    var bottoneInvia = document.getElementById("bt_Invia");
 
-function process() {
-    var tipo = domande[n_Domanda][2];
+    bottoneInvia.onclick = function() {
 
+        var tipo = domande[n_Domanda][1];
 
-    if(tipo == 1){
-        if(risposta1.value == domande[n_Domanda][2]){
-            //risultato == "GIUSTO!!";
-            casellaPunti.style.background = "#32CD32";
-            punti++;
-            correct(nb);
-            nb.style.background = "green";
-        }
-        else{
-            //risultato == "SBAGLIATO!!";
-            casellaPunti.style.background = "#FF0000";
-            wrong(nb);
-            nb.style.background = "red";
-            for(var j=1; j<=3; j++){
-                var sbutton = document.form1["button" + j];
-                var gh = sbutton.value;
-                if(gh == giusta[n_Domanda]){
-                    sbutton.style.background = "green";
-                }
+        if(tipo == 1){
+            if(risposta1.value == domande[n_Domanda][2]){
+                //risultato == "GIUSTO!!";
+                casellaPunti.style.background = "#32CD32";
+                punti++;
+            }
+            else{
+                //risultato == "SBAGLIATO!!";
+                casellaPunti.style.background = "#FF0000";
             }
         }
-    }
-
-    if(tipo == 2){
-        if((risposta1.value == domande[n_Domanda][2][0] || risposta1.value == domande[n_Domanda][2][1]) && (risposta2.value == domande[n_Domanda][2][0] || risposta2.value == domande[n_Domanda][2][1])){
-            //risultato == "GIUSTO!!";
-            casellaPunti.style.background = "#32CD32";
-            punti++;
-            correct(nb);
-            nb.style.background = "green";
-        }
-        else{
-            //risultato == "SBAGLIATO!!";
-            casellaPunti.style.background = "#FF0000";
-            wrong(nb);
-            nb.style.background = "red";
-            for(var j=1; j<=3; j++){
-                var sbutton = document.form1["button" + j];
-                var gh = sbutton.value;
-                if(gh == giusta[n_Domanda]){
-                    sbutton.style.background = "green";
-                }
+        else if(tipo == 2){
+            if((risposta1.value == domande[n_Domanda][2][0] || risposta1.value == domande[n_Domanda][2][1]) && (risposta2.value ==      domande[n_Domanda][2][0] || risposta2.value == domande[n_Domanda][2][1])){
+                //risultato == "GIUSTO!!";
+                casellaPunti.style.background = "#32CD32";
+                punti++;
+            }
+            else{
+                //risultato == "SBAGLIATO!!";
+                casellaPunti.style.background = "#FF0000";
             }
         }
-    }
-
-    if(tipo == 3){
-
+        else if(tipo == 3){
+            alert("a1a");
+        }
+    else{
+        alert("error!!");
     }
 
 
@@ -79,14 +59,13 @@ function process() {
     }
 
     n_Domanda++;
-    bottone1.disabled = true;
-    bottone2.disabled = true;
-    bottone3.disabled = true;
+    bottoneInvia.disabled = true;
     testoProssima.style.display = "inline";
     bottoneNuova.style.display = "inline";
 
     casellaPunti.textContent =  punti + "/40";
 
+    }
 
     //######################
     //######################
@@ -95,17 +74,15 @@ function process() {
     //######################
     bottoneNuova.onclick = function() {
         linkDes.style.display = "none";
-        $('#dm').removeClass().addClass('animated flipOutX');
-        $('#dm2').removeClass().addClass('animated flipOutYa');
-        $('#dm3').removeClass().addClass('animated flipOutY');
-        $('#dm1').removeClass().addClass('animated flipOutY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-
+        //$('#dm').removeClass().addClass('animated flipOutX');
+        //$('#dm2').removeClass().addClass('animated flipOutYa');
+        //$('#dm3').removeClass().addClass('animated flipOutY');
+        //$('#dm1').removeClass().addClass('animated flipOutY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 
             if(n_Domanda<=40){
 
                 if(n_Domanda==40){
                     var tesNew = document.getElementById("testoNext");
-
                     tesNew.textContent  = "FINISH -->";
                 }
 
@@ -115,37 +92,24 @@ function process() {
                 bottoneNuova.style.display = "none";
                 linkDes.style.display = "none";
 
-                bottone1.style.background = "#e67e22";
-                bottone1.onmouseover = function() {
+                bottoneInvia.style.background = "#e67e22";
+                bottoneInvia.onmouseover = function() {
                     this.style.backgroundColor = "#FF983C";
                 }
-                bottone1.onmouseout = function() {
-                    this.style.backgroundColor = "#e67e22";
-                }
-                bottone2.style.background = "#e67e22";
-                bottone2.onmouseover = function() {
-                    this.style.backgroundColor = "#FF983C";
-                }
-                bottone2.onmouseout = function() {
-                    this.style.backgroundColor = "#e67e22";
-                }
-                bottone3.style.background = "#e67e22";
-                bottone3.onmouseover = function() {
-                    this.style.backgroundColor = "#FF983C";
-                }
-                bottone3.onmouseout = function() {
+                bottoneInvia.onmouseout = function() {
                     this.style.backgroundColor = "#e67e22";
                 }
 
-                bottone1.disabled = false;
-                bottone2.disabled = false;
-                bottone3.disabled = false;
+                bottoneInvia.disabled = false;
+
+                risposta1.value = "";
+                risposta2.value = "";
 
                 //NUOVE DOMANDE ----  ----  ----
 
                 testoDomanda.innerHTML = domande[n_Domanda][0];
 
-                var tipodopo = domande[n_Domanda][2];
+                var tipodopo = domande[n_Domanda][1];
 
                 if(tipodopo == 1){
                     bottoneSi.style.display = "none";
@@ -168,15 +132,6 @@ function process() {
                     risposta2.style.display = "none";
                 }
 
-                var opzione1 = document.form1["button1"];
-                opzione1.value = domande[n_Domanda][1];
-
-                var opzione2 = document.form1["button2"];
-                opzione2.value = domande[n_Domanda][2];
-
-                var opzione3 = document.form1["button3"];
-                opzione3.value = domande[n_Domanda][3];
-
             }
             else{
                 localStorage.setItem("score", punti);
@@ -184,11 +139,8 @@ function process() {
 
             }
 
-            $('#dm').removeClass().addClass('animated flipInX');
-            $('#dm1').removeClass().addClass('animated flipInY');
-            $('#dm2').removeClass().addClass('animated flipInYa');
-            $('#dm3').removeClass().addClass('animated flipInY');
-        });
-
-    }
-}
+           // $('#dm').removeClass().addClass('animated flipInX');
+           // $('#dm1').removeClass().addClass('animated flipInY');
+           // $('#dm2').removeClass().addClass('animated flipInYa');
+           // $('#dm3').removeClass().addClass('animated flipInY');
+        }
