@@ -67,6 +67,10 @@ localStorage.removeItem('risp');
 
     n_Domanda++;
     bottoneInvia.disabled = true;
+    bottoneSi.disabled = true;
+    bottoneNo.disabled = true;
+    risposta1.disabled = true;
+    risposta2.disabled = true;
     testoProssima.style.display = "inline";
     bottoneNuova.style.display = "inline";
 
@@ -80,7 +84,7 @@ localStorage.removeItem('risp');
         localStorage.setItem('risp','si');
         bottoneInvia.disabled=false;
         bottoneSi.style.background = "blue";
-        bottoneNo.style.background = "orange";
+        bottoneNo.style.background = "#e67e22";
         //bottoneSi.disabled=true;
         //bottoneNo.disabled=true;
     }
@@ -89,7 +93,7 @@ localStorage.removeItem('risp');
         localStorage.setItem('risp','no');
         bottoneInvia.disabled=false;
         bottoneNo.style.background = "blue";
-        bottoneSi.style.background = "orange";
+        bottoneSi.style.background = "#e67e22";
         //bottoneSi.disabled=true;
         //bottoneNo.disabled=true;
     }
@@ -144,6 +148,7 @@ localStorage.removeItem('risp');
                     bottoneSi.style.display = "none";
                     bottoneNo.style.display = "none";
                     risposta1.style.display = "inline";
+                    risposta1.disabled = false;
                     risposta2.style.display = "none";
                 }
 
@@ -152,6 +157,8 @@ localStorage.removeItem('risp');
                     bottoneNo.style.display = "none";
                     risposta1.style.display = "inline";
                     risposta2.style.display = "inline";
+                    risposta1.disabled = false;
+                    risposta2.disabled = false;
                 }
 
                 if(tipodopo == 3){
