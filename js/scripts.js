@@ -14,15 +14,16 @@ var n_Domanda = 1;
     var testo_nDomanda = document.getElementById("text_nDomanda");
     var testoDomanda = document.getElementById("textDomanda");
     var desc_pop = document.getElementById("desc_w");
-    var tipo = domande[n_Domanda][2];
     var bottoneSi = document.form1["rispostaBtSi"];
     var bottoneNo = document.form1["rispostaBtNo"];
 
 
 function process() {
+    var tipo = domande[n_Domanda][2];
+
 
     if(tipo == 1){
-        if(risposta1 == domande[n_Domanda][2]){
+        if(risposta1.value == domande[n_Domanda][2]){
             //risultato == "GIUSTO!!";
             casellaPunti.style.background = "#32CD32";
             punti++;
@@ -45,7 +46,7 @@ function process() {
     }
 
     if(tipo == 2){
-        if((risposta1 == domande[n_Domanda][2][0] || risposta1 == domande[n_Domanda][2][1]) && (risposta2 == domande[n_Domanda][2][0] || risposta2 == domande[n_Domanda][2][1])){
+        if((risposta1.value == domande[n_Domanda][2][0] || risposta1.value == domande[n_Domanda][2][1]) && (risposta2.value == domande[n_Domanda][2][0] || risposta2.value == domande[n_Domanda][2][1])){
             //risultato == "GIUSTO!!";
             casellaPunti.style.background = "#32CD32";
             punti++;
@@ -105,7 +106,7 @@ function process() {
                 if(n_Domanda==40){
                     var tesNew = document.getElementById("testoNext");
 
-                    tesNew.textContent  = "FINISH -->"
+                    tesNew.textContent  = "FINISH -->";
                 }
 
                 testo_nDomanda.textContent = n_Domanda;
@@ -145,6 +146,7 @@ function process() {
                 testoDomanda.innerHTML = domande[n_Domanda][0];
 
                 var tipodopo = domande[n_Domanda][2];
+
                 if(tipodopo == 1){
                     bottoneSi.style.display = "none";
                     bottoneNo.style.display = "none";
