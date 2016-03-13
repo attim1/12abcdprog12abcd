@@ -16,6 +16,7 @@ var n_Domanda = 1;
     var desc_pop = document.getElementById("desc_w");
     var bottoneSi = document.form1["rispostaBtSi"];
     var bottoneNo = document.form1["rispostaBtNo"];
+    var autore = document.getElementById('autore');
 
     var bottoneInvia = document.getElementById("bt_Invia");
 localStorage.removeItem('risp');
@@ -37,7 +38,7 @@ localStorage.removeItem('risp');
             }
         }
         else if(tipo == 2){
-            if((risposta1.value.toLowerCase() === domande[n_Domanda][2][0] || risposta1.value.toLowerCase() === domande[n_Domanda][2][1]) && (risposta2.value.toLowerCase() === domande[n_Domanda][2][0] || risposta2.value.toLowerCase() === domande[n_Domanda][2][1])){
+            if((risposta1.value.toLowerCase() === domande[n_Domanda][2][0].toLowerCase() || risposta1.value.toLowerCase() === domande[n_Domanda][2][1].toLowerCase()) && (risposta2.value.toLowerCase() === domande[n_Domanda][2][0].toLowerCase() || risposta2.value.toLowerCase() === domande[n_Domanda][2][1].toLowerCase())){
                 //risultato == "GIUSTO!!";
                 casellaPunti.style.background = "#32CD32";
                 punti++;
@@ -140,7 +141,9 @@ localStorage.removeItem('risp');
 
                 //NUOVE DOMANDE ----  ----  ----
 
-                testoDomanda.innerHTML = domande[n_Domanda][0];
+                testoDomanda.innerHTML = domande[n_Domanda][0] + "<br><i style='font-size:30px'>Nome e Cognome</i>";
+                autore.innerHTML = 'Autore: ' + domande[n_Domanda][3];
+
 
                 var tipodopo = domande[n_Domanda][1];
 
