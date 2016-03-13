@@ -37,7 +37,7 @@ var domande = [
                 "no", //risposta giusta
                 "Matteo Lucini", //autore
             ],
-    /*8*/	["Quale particolare arma chimica $egrave; stata utilizzata nella prima guerra mondiale? Di quale patriota ha causato la morte?",
+    /*8*/	["Quale particolare arma chimica &egrave; stata utilizzata nella prima guerra mondiale? Di quale patriota ha causato la morte?",
                 "1", //numero risposte
                 "i gas asfissiante, Giovanni Bardelli", //risposta giusta aslkdasjsalkadsjasdlkdsajasldkj da guardare
                 "Arianna Grazioli", //autore

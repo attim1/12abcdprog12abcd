@@ -42,7 +42,7 @@ body
   border-radius: 10px 10px 10px 10px;
   display : block;
   width : 918px;
-  height : 126px;
+  height : 150px;
   overflow: auto;
 
 }
@@ -171,4 +171,19 @@ height:768px;
     width: 150px;
     height: 115px;
     font-size: 55px;
+}
+
+.textrisp{
+    display: inline-block;
+    font-size: 29px;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+    color: wheat;
+    position: relative;
+    display: inline-block;
+    border: 1px solid transparent;
+    background-color: blue;
+
 }
