@@ -79,15 +79,19 @@ localStorage.removeItem('risp');
         localStorage.removeItem('risp');
         localStorage.setItem('risp','si');
         bottoneInvia.disabled=false;
-        bottoneSi.disabled=true;
-        bottoneNo.disabled=true;
+        bottoneSi.style.background = "blue";
+        bottoneNo.style.background = "orange";
+        //bottoneSi.disabled=true;
+        //bottoneNo.disabled=true;
     }
     bottoneNo.onclick = function (){
         localStorage.removeItem('risp');
         localStorage.setItem('risp','no');
         bottoneInvia.disabled=false;
-        bottoneSi.disabled=true;
-        bottoneNo.disabled=true;
+        bottoneNo.style.background = "blue";
+        bottoneSi.style.background = "orange";
+        //bottoneSi.disabled=true;
+        //bottoneNo.disabled=true;
     }
     //fine bottoni si e no
 
