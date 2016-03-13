@@ -15,6 +15,7 @@ var n_Domanda = 1;
     var testoDomanda = document.getElementById("textDomanda");
     var desc_pop = document.getElementById("desc_w");
     var tipo = domande[n_Domanda][2];
+    var tipodopo = domande[n_Domanda + 1][2];
 
 function process() {
 
@@ -64,6 +65,9 @@ function process() {
         }
     }
 
+    if(tipo == 3){
+
+    }
 
 
     if(descrizione[n_Domanda][0] == 1){
