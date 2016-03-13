@@ -26,7 +26,7 @@ localStorage.removeItem('risp');
         var tipo = domande[n_Domanda][1];
 
         if(tipo == 1){
-            if(risposta1.value == domande[n_Domanda][2]){
+            if(risposta1.value.toLowerCase() === domande[n_Domanda][2].toLowerCase()){
                 //risultato == "GIUSTO!!";
                 casellaPunti.style.background = "#32CD32";
                 punti++;
@@ -37,7 +37,7 @@ localStorage.removeItem('risp');
             }
         }
         else if(tipo == 2){
-            if((risposta1.value == domande[n_Domanda][2][0] || risposta1.value == domande[n_Domanda][2][1]) && (risposta2.value ==      domande[n_Domanda][2][0] || risposta2.value == domande[n_Domanda][2][1])){
+            if((risposta1.value.toLowerCase() === domande[n_Domanda][2][0] || risposta1.value.toLowerCase() === domande[n_Domanda][2][1]) && (risposta2.value.toLowerCase() === domande[n_Domanda][2][0] || risposta2.value.toLowerCase() === domande[n_Domanda][2][1])){
                 //risultato == "GIUSTO!!";
                 casellaPunti.style.background = "#32CD32";
                 punti++;
