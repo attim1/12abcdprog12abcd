@@ -4,25 +4,19 @@ var risultato="giusto";
 var punti = 0;
 var n_Domanda = 1;
 
-function process() {
-
-    var risposta1 = document.getElementById('rispostatext');
+	var risposta1 = document.getElementById('rispostatext');
     var risposta2 = document.getElementById('rispostatext2');
-
-    //var nb = this;
 
     var linkDes = document.getElementById('apri_des');
     var bottoneNuova = document.form2["next"];
     var testoProssima = document.getElementById('testoNext');
-    /*var bottone1 = document.form1["button1"];
-	var bottone2 = document.form1["button2"];
-	var bottone3 = document.form1["button3"];*/
     var casellaPunti = document.getElementById('textPunti');
     var testo_nDomanda = document.getElementById("text_nDomanda");
     var testoDomanda = document.getElementById("textDomanda");
     var desc_pop = document.getElementById("desc_w");
     var tipo = domande[n_Domanda][2];
 
+function process() {
 
     if(tipo == 1){
         if(risposta1 == domande[n_Domanda][2]){
