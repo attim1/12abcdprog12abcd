@@ -15,7 +15,9 @@ var n_Domanda = 1;
     var testoDomanda = document.getElementById("textDomanda");
     var desc_pop = document.getElementById("desc_w");
     var tipo = domande[n_Domanda][2];
-    var tipodopo = domande[n_Domanda + 1][2];
+    var bottoneSi = document.form1["rispostaBtSi"];
+    var bottoneNo = document.form1["rispostaBtNo"];
+
 
 function process() {
 
@@ -141,6 +143,28 @@ function process() {
                 //NUOVE DOMANDE ----  ----  ----
 
                 testoDomanda.innerHTML = domande[n_Domanda][0];
+
+                var tipodopo = domande[n_Domanda][2];
+                if(tipodopo == 1){
+                    bottoneSi.style.display = "none";
+                    bottoneNo.style.display = "none";
+                    risposta1.style.display = "inline";
+                    risposta2.style.display = "none";
+                }
+
+                if(tipodopo == 2){
+                    bottoneSi.style.display = "none";
+                    bottoneNo.style.display = "none";
+                    risposta1.style.display = "inline";
+                    risposta2.style.display = "inline";
+                }
+
+                if(tipodopo == 3){
+                    bottoneSi.style.display = "inline";
+                    bottoneNo.style.display = "inline";
+                    risposta1.style.display = "none";
+                    risposta2.style.display = "none";
+                }
 
                 var opzione1 = document.form1["button1"];
                 opzione1.value = domande[n_Domanda][1];
