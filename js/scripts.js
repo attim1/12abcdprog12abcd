@@ -18,6 +18,8 @@ var n_Domanda = 1;
     var bottoneNo = document.form1["rispostaBtNo"];
 
     var bottoneInvia = document.getElementById("bt_Invia");
+localStorage.removeItem('risp');
+
 
     bottoneInvia.onclick = function() {
 
@@ -46,11 +48,16 @@ var n_Domanda = 1;
             }
         }
         else if(tipo == 3){
-            alert("a1a");
+            if(localStorage.getItem('risp') == domande[n_Domanda][2]){
+                //risultato == "GIUSTO!!";
+                casellaPunti.style.background = "#32CD32";
+                punti++;
+            }
+            else{
+                //risultato == "SBAGLIATO!!";
+                casellaPunti.style.background = "#FF0000";
+            }
         }
-    else{
-        alert("error!!");
-    }
 
 
     if(descrizione[n_Domanda][0] == 1){
@@ -63,9 +70,27 @@ var n_Domanda = 1;
     testoProssima.style.display = "inline";
     bottoneNuova.style.display = "inline";
 
-    casellaPunti.textContent =  punti + "/40";
+    casellaPunti.textContent =  punti + "/24";
 
     }
+
+    //bottoni si e no
+    bottoneSi.onclick = function (){
+        localStorage.removeItem('risp');
+        localStorage.setItem('risp','si');
+        bottoneInvia.disabled=false;
+        bottoneSi.disabled=true;
+        bottoneNo.disabled=true;
+    }
+    bottoneNo.onclick = function (){
+        localStorage.removeItem('risp');
+        localStorage.setItem('risp','no');
+        bottoneInvia.disabled=false;
+        bottoneSi.disabled=true;
+        bottoneNo.disabled=true;
+    }
+    //fine bottoni si e no
+
 
     //######################
     //######################
@@ -79,9 +104,9 @@ var n_Domanda = 1;
         //$('#dm3').removeClass().addClass('animated flipOutY');
         //$('#dm1').removeClass().addClass('animated flipOutY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 
-            if(n_Domanda<=40){
+            if(n_Domanda<=24){
 
-                if(n_Domanda==40){
+                if(n_Domanda==24){
                     var tesNew = document.getElementById("testoNext");
                     tesNew.textContent  = "FINISH -->";
                 }
@@ -130,6 +155,9 @@ var n_Domanda = 1;
                     bottoneNo.style.display = "inline";
                     risposta1.style.display = "none";
                     risposta2.style.display = "none";
+                    bottoneSi.disabled=false;
+                    bottoneNo.disabled=false;
+                    bottoneInvia.disabled=true;
                 }
 
             }
