@@ -27,7 +27,7 @@ localStorage.removeItem('risp');
         var tipo = domande[n_Domanda][1];
 
         if(tipo == 1){
-            if(risposta1.value.toLowerCase() === domande[n_Domanda][2].toLowerCase()){
+            if(risposta1.value.toString().toLowerCase() === domande[n_Domanda][2].toString().toLowerCase()){
                 //risultato == "GIUSTO!!";
                 casellaPunti.style.background = "#32CD32";
                 punti++;
@@ -38,7 +38,7 @@ localStorage.removeItem('risp');
             }
         }
         else if(tipo == 2){
-            if((risposta1.value.toLowerCase() === domande[n_Domanda][2][0].toLowerCase() || risposta1.value.toLowerCase() === domande[n_Domanda][2][1].toLowerCase()) && (risposta2.value.toLowerCase() === domande[n_Domanda][2][0].toLowerCase() || risposta2.value.toLowerCase() === domande[n_Domanda][2][1].toLowerCase())){
+            if((risposta1.value.toString().toLowerCase() === domande[n_Domanda][2][0].toString().toLowerCase() || risposta1.value.toString().toLowerCase() === domande[n_Domanda][2][1].toString().toLowerCase()) && (risposta2.value.toString().toLowerCase() === domande[n_Domanda][2][0].toString().toLowerCase() || risposta2.value.toString().toLowerCase() === domande[n_Domanda][2][1].toString().toLowerCase())){
                 //risultato == "GIUSTO!!";
                 casellaPunti.style.background = "#32CD32";
                 punti++;
