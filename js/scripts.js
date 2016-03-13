@@ -172,4 +172,3 @@ localStorage.removeItem('risp');
            // $('#dm2').removeClass().addClass('animated flipInYa');
            // $('#dm3').removeClass().addClass('animated flipInY');
         }
-    localStorage.removeItem('risp');
