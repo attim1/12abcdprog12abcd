@@ -6,13 +6,13 @@ var domande = [
                 "Antonio Ciboldi",  //autore
             ],
 
-    /*2*/	["Quale lapide ha qualcosa in comune con il film ”Caccia ad ottobre rosso” e parla di un nuovo mezzo marittimo?",
+    /*2*/	["Quale lapide ha qualcosa in comune con il film &quot;Caccia ad ottobre rosso&quot; e parla di un nuovo mezzo marittimo?",
                 "1", //numero risposte
                 "Annibale Eugenio", //risposta giusta
                 "Riccardo Pontevichi", //autore
             ],
 
-    /*3*/	["Quali sono le due lapidi che sono “decorate” con l'immagine di un fucile?",
+    /*3*/	["Quali sono le due lapidi che sono &quot;decorate&quot; con l'immagine di un fucile?",
                 "2", //numero risposte
                 ["Ettore Galli", "Luigi Marconi"],  //risposta giusta
                 "Andrea Marca", //autore
