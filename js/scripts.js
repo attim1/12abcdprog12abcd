@@ -113,9 +113,9 @@ localStorage.removeItem('risp');
         //$('#dm3').removeClass().addClass('animated flipOutY');
         //$('#dm1').removeClass().addClass('animated flipOutY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 
-            if(n_Domanda<=3){
+            if(n_Domanda<=24){
 
-                if(n_Domanda==3){
+                if(n_Domanda==24){
                     var tesNew = document.getElementById("testoNext");
                     tesNew.textContent  = "FINISCI -->";
                 }

@@ -8,7 +8,7 @@ function init(){
         var punti = localStorage.getItem("score");
 
         var testoRisultato = document.getElementById('result');
-        testoRisultato.textContent = punti + "/40";
+        testoRisultato.textContent = punti + "/24";
 
         var img = window.document.getElementById("immagine");
 
@@ -16,14 +16,17 @@ function init(){
         var benino = "images/mmm.jpg";
         var male = "images/noo.jpg";
 
-        if( punti > 29){
+        if( punti > 18){
             img.src = bene;
         }
-        if (punti > 18 && punti < 30){
+        else if (punti > 8 && punti < 19){
             img.src = benino;
         }
-        if (punti < 19){
+        else if (punti < 9){
             img.src= male;
+        }
+        else{
+            img.src = benino;
         }
 
         inviaDati();
