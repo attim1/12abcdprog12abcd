@@ -23,7 +23,8 @@ localStorage.removeItem('risp');
 
 
     bottoneInvia.onclick = function() {
-
+        var bottoneGen = "";
+        var sbagliato = 0;
         var tipo = domande[n_Domanda][1];
 
         if(tipo == 1){
@@ -35,6 +36,7 @@ localStorage.removeItem('risp');
             else{
                 //risultato == "SBAGLIATO!!";
                 casellaPunti.style.background = "#FF0000";
+                sbagliato = 1;
             }
         }
         else if(tipo == 2){
@@ -46,25 +48,54 @@ localStorage.removeItem('risp');
             else{
                 //risultato == "SBAGLIATO!!";
                 casellaPunti.style.background = "#FF0000";
+                sbagliato = 1;
             }
         }
         else if(tipo == 3){
             if(localStorage.getItem('risp') == domande[n_Domanda][2]){
                 //risultato == "GIUSTO!!";
+                if(domande[n_Domanda][2] == "si"){
+                    bottoneGen = bottoneSi;
+                }if(domande[n_Domanda][2] == "no"){
+                    bottoneGen = bottoneNo;
+                }
+                bottoneGen.style.background = "green";
                 casellaPunti.style.background = "#32CD32";
                 punti++;
             }
             else{
                 //risultato == "SBAGLIATO!!";
+                if(domande[n_Domanda][2] == "no"){
+                    bottoneGen = bottoneSi;
+                }if(domande[n_Domanda][2] == "si"){
+                    bottoneGen = bottoneNo;
+                }
+                bottoneGen.style.background = "red";
                 casellaPunti.style.background = "#FF0000";
+                sbagliato = 1;
             }
         }
 
 
-    if(descrizione[n_Domanda][0] == 1){
+    /*if(descrizione[n_Domanda][0] == 1){
         linkDes.style.display = "inline";
         desc_pop.innerHTML = descrizione[n_Domanda][1];
+    }*/
+
+    if (sbagliato == 1 || descrizione[n_Domanda][1] != "..."){
+        linkDes.style.display = "inline";
+        if(sbagliato == 1 && descrizione[n_Domanda][1] == "..."){
+            desc_pop.innerHTML = descrizione[n_Domanda][0];
+        }
+        if(sbagliato == 1 && descrizione[n_Domanda][1] != "..."){
+            desc_pop.innerHTML = descrizione[n_Domanda][0] + descrizione[n_Domanda][1];
+        }
+        if(sbagliato == 0 && descrizione[n_Domanda][1] != "..."){
+            desc_pop.innerHTML = descrizione[n_Domanda][1];
+        }
+
     }
+
 
     n_Domanda++;
     bottoneInvia.disabled = true;

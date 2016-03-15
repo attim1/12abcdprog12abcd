@@ -1,7 +1,7 @@
 var domande = [
 	/*0*/	"0",
 	/*1*/	["1",
-                1, //numero risposte
+                "1", //numero risposte
                 "Giorgio Rossi", //risposta giusta
                 "Antonio Ciboldi",  //autore
             ],
@@ -37,9 +37,9 @@ var domande = [
                 "no", //risposta giusta
                 "Matteo Lucini", //autore
             ],
-    /*8*/	["Quale particolare arma chimica &egrave; stata utilizzata nella prima guerra mondiale? Di quale patriota ha causato la morte?",
+    /*8*/	["Di quale patriota il gas affissiante ha causato la morte?",
                 "1", //numero risposte
-                "i gas asfissiante, Giovanni Bardelli", //risposta giusta aslkdasjsalkadsjasdlkdsajasldkj da guardare
+                "Giovanni Bardelli", //risposta giusta
                 "Arianna Grazioli", //autore
             ],
     /*9*/	["Chi insegn&ograve; ai suoi compagni la lingua tedesca e fu tra i primi a prestare giuramento nella Guardia Nazionale di Cremona?",
