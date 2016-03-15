@@ -27,7 +27,7 @@ function init(){
 
             if(i==0){
                 cell1.innerHTML = "";
-                cell2.innerHTML = "<b>NOME</b>";
+                cell2.innerHTML = "<b>CLASSE</b>";
                 cell3.innerHTML = "<b>PUNTEGGIO</b>";
             }
             else{

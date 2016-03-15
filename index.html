@@ -35,7 +35,7 @@
                 <span class="input input--haruki">
                     <input class="input__field input__field--haruki" type="text" id="name" maxlength="10" />
                     <label class="input__label input__label--haruki" for="name">
-                        <span class="input__label-content input__label-content--haruki">Inserisci il tuo nome</span>
+                        <span class="input__label-content input__label-content--haruki">Inserisci la classe</span>
                     </label>
                 </span>
             </div>
@@ -82,7 +82,7 @@
             function inizia(){
                 var user = document.getElementById("name").value;
                 if(user == ""){
-                    alert("Inserire Nome!!!");
+                    alert("Inserire classe!!!");
                 }
                 else{
                     localStorage.removeItem("name");

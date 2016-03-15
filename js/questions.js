@@ -27,7 +27,7 @@ var domande = [
                 "Annibale Cassani", //risposta giusta
                 "Luigi Tamb&egrave;", //autore
             ],
-    /*6*/	["Quali sono i simboli della guerra più ricorrenti nelle decorazioni delle lapidi?",
+    /*6*/	["Quali sono i simboli della guerra pi&ugrave; ricorrenti nelle decorazioni delle lapidi?",
                 "1", //numero risposte
                 "risposta giusta", //risposta giusta sasdadsdasadsasdsadasdaasdadsasdasdasdasdsadasasdasda da guardare
                 "Matteo Lorandi", //autore
@@ -47,7 +47,7 @@ var domande = [
                 "Giuseppe Boselli", //risposta giusta
                 "Letizia Morello", //autore
             ],
-    /*10*/	["Rinunci&ograve; alla sua giovinezza per un'Italia più grande e morì lontano dai genitori. Chi è ?",
+    /*10*/	["Rinunci&ograve; alla sua giovinezza per un'Italia pi&ugrave; grande e mor&igrave; lontano dai genitori. Chi &egrave; ?",
                 "1", //numero risposte
                 "Ernesto Stagnati", //risposta giusta
                 "Valeria Gallo", //autore
@@ -57,7 +57,7 @@ var domande = [
                 "Luigi Marconi", //risposta giusta
                 "Stella Gardani", //autore
             ],
-    /*12*/	["Chi &egrave; il più giovane tra i caduti della prima guerra mondiale nelle fotografie della mostra?",
+    /*12*/	["Chi &egrave; il pi&ugrave; giovane tra i caduti della prima guerra mondiale nelle fotografie della mostra?",
                 "1", //numero risposte
                 "Giosafat Priori", //risposta giusta
                 "Alessandro Soavi", //autore

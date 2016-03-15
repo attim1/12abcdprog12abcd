@@ -1,51 +1,51 @@
 var descrizione = [
     /*0*/	"0",
-    /*1*/	["La risposta giusta è Giorgio Rossi.","..."
+    /*1*/	["La risposta giusta &egrave; Giorgio Rossi.","..."
             ],
-    /*2*/	["La risposta giusta è Annibale Eugenio.","<br> Annibale Eugenio fu sommergibilista"
+    /*2*/	["La risposta giusta &egrave; Annibale Eugenio.","<br> Annibale Eugenio fu sommergibilista"
             ],
-    /*3*/	["La risposta giusta è Ettore Galli e Luigi Marconi.","..."
+    /*3*/	["La risposta giusta &egrave; Ettore Galli e Luigi Marconi.","..."
             ],
-    /*4*/	["La risposta giusta è Quattro.","<br> Le quattro lapidi sono di: Pietro Camelli, Alfredo Ghisoli, Francesco Pozzi, Giuseppe Pelegni."
+    /*4*/	["La risposta giusta &egrave; Quattro.","<br> Le quattro lapidi sono di: Pietro Camelli, Alfredo Ghisoli, Francesco Pozzi, Giuseppe Pelegni."
             ],
-    /*5*/	["La risposta giusta è Annibale Cassani.","..."
+    /*5*/	["La risposta giusta &egrave; Annibale Cassani.","..."
             ],
-    /*6*/	["La risposta giusta è ","..." //da mettere a posto lakdnasmscnslkdsvanmv,adnkl
+    /*6*/	["La risposta giusta &egrave; ","..." //da mettere a posto lakdnasmscnslkdsvanmv,adnkl
             ],
-    /*7*/	["","Un monumento è stato dedicato ai soldati stranieri."
+    /*7*/	["","Un monumento &egrave; stato dedicato ai soldati stranieri."
             ],
     /*8*/	["La risposta giusta è Giovanni Bardelli.","..."
             ],
-    /*9*/	["La risposta giusta è Giuseppe Boselli.","..."
+    /*9*/	["La risposta giusta &egrave; Giuseppe Boselli.","..."
             ],
-    /*10*/	["La risposta giusta è Ernesto Stagnati.","..."
+    /*10*/	["La risposta giusta &egrave; Ernesto Stagnati.","..."
             ],
-    /*11*/	["La risposta giusta è Luigi Marconi.","..."
+    /*11*/	["La risposta giusta &egrave; Luigi Marconi.","..."
             ],
-    /*12*/	["La risposta giusta è Giosafat Priori.","<br> Morì a 21 anni"
+    /*12*/	["La risposta giusta &egrave; Giosafat Priori.","<br> Mor&igrave; a 21 anni"
             ],
-    /*13*/	["La risposta giusta è Giuseppe Pelegri.","..."
+    /*13*/	["La risposta giusta &egrave; Giuseppe Pelegri.","..."
             ],
-    /*14*/	["La risposta giusta è Annibale Eugenio Amici.","..."
+    /*14*/	["La risposta giusta &egrave; Annibale Eugenio Amici.","..."
             ],
-    /*15*/	["La risposta giusta è Francesco Pozzi.","..."
+    /*15*/	["La risposta giusta &egrave; Francesco Pozzi.","..."
             ],
-    /*16*/	["La risposta giusta è ","..." //da mettere a posto salkdnlckdsnlkadvskladsdvnvlsadkvlksdn
+    /*16*/	["La risposta giusta &egrave; ","..." //da mettere a posto salkdnlckdsnlkadvskladsdvnvlsadkvlksdn
             ],
-    /*17*/	["La risposta giusta è Palmiro Balestrieri.","..."
+    /*17*/	["La risposta giusta &egrave; Palmiro Balestrieri.","..."
             ],
-    /*18*/	["La risposta giusta è Giuseppe Boselli.","..."
+    /*18*/	["La risposta giusta &egrave; Giuseppe Boselli.","..."
             ],
-    /*19*/	["La risposta giusta è Tre.","<br> Nelle tombe di Giuseppe Pizzi , Ernesto Lucchini , Ettore Galli"
+    /*19*/	["La risposta giusta &egrave; Tre.","<br> Nelle tombe di Giuseppe Pizzi , Ernesto Lucchini , Ettore Galli"
             ],
-    /*20*/	["La risposta giusta è Angelo Dadomo.","..."
+    /*20*/	["La risposta giusta &egrave; Angelo Dadomo.","..."
             ],
-    /*21*/	["La risposta giusta è Lavinio Zanacchi.","..."
+    /*21*/	["La risposta giusta &egrave; Lavinio Zanacchi.","..."
             ],
-    /*22*/	["La risposta giusta è Angelo Dadomo.","..."
+    /*22*/	["La risposta giusta &egrave; Angelo Dadomo.","..."
             ],
-    /*23*/	["La risposta giusta è Enrico Binda.","..."
+    /*23*/	["La risposta giusta &egrave; Enrico Binda.","..."
             ],
-    /*24*/	["La risposta giusta è Ernesto Lucchini.","..."
+    /*24*/	["La risposta giusta &egrave; Ernesto Lucchini.","..."
             ],
 ];
