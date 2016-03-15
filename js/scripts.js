@@ -117,7 +117,7 @@ localStorage.removeItem('risp');
 
                 if(n_Domanda==24){
                     var tesNew = document.getElementById("testoNext");
-                    tesNew.textContent  = "FINISH -->";
+                    tesNew.textContent  = "FINISCI -->";
                 }
 
                 testo_nDomanda.textContent = n_Domanda;
@@ -176,7 +176,10 @@ localStorage.removeItem('risp');
 
             }
             else{
+                localStorage.removeItem("score");
                 localStorage.setItem("score", punti);
+                localStorage.removeItem("finito");
+                localStorage.setItem("finito", "si");
                 window.location.href = "risultati.html";
 
             }

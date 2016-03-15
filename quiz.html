@@ -12,7 +12,16 @@
 	<script type="text/javascript" src="js/questions.js"></script>
 	<script type="text/javascript" src="js/domCorrette.js"></script>
 	<script type="text/javascript" src="js/descrizione.js"></script>
-	
+	<script>
+	    function load(){
+            if(localStorage.getItem("name") === null){
+                localStorage.removeItem("erroreName");
+                localStorage.setItem("erroreName", "si");
+                window.location.href = "index.html";
+            }
+        }
+        window.onload = load();
+	</script>
   </head>
   <body style="background-image:url(images/background/sfondo.jpg)">
   <div id="t">
