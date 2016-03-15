@@ -16,6 +16,7 @@ var n_Domanda = 1;
     var desc_pop = document.getElementById("desc_w");
     var bottoneSi = document.form1["rispostaBtSi"];
     var bottoneNo = document.form1["rispostaBtNo"];
+    var autore = document.getElementById('autore');
 
     var bottoneInvia = document.getElementById("bt_Invia");
 localStorage.removeItem('risp');
@@ -26,7 +27,7 @@ localStorage.removeItem('risp');
         var tipo = domande[n_Domanda][1];
 
         if(tipo == 1){
-            if(risposta1.value == domande[n_Domanda][2]){
+            if(risposta1.value.toString().toLowerCase() === domande[n_Domanda][2].toString().toLowerCase()){
                 //risultato == "GIUSTO!!";
                 casellaPunti.style.background = "#32CD32";
                 punti++;
@@ -37,7 +38,7 @@ localStorage.removeItem('risp');
             }
         }
         else if(tipo == 2){
-            if((risposta1.value == domande[n_Domanda][2][0] || risposta1.value == domande[n_Domanda][2][1]) && (risposta2.value ==      domande[n_Domanda][2][0] || risposta2.value == domande[n_Domanda][2][1])){
+            if((risposta1.value.toString().toLowerCase() === domande[n_Domanda][2][0].toString().toLowerCase() || risposta1.value.toString().toLowerCase() === domande[n_Domanda][2][1].toString().toLowerCase()) && (risposta2.value.toString().toLowerCase() === domande[n_Domanda][2][0].toString().toLowerCase() || risposta2.value.toString().toLowerCase() === domande[n_Domanda][2][1].toString().toLowerCase())){
                 //risultato == "GIUSTO!!";
                 casellaPunti.style.background = "#32CD32";
                 punti++;
@@ -67,6 +68,10 @@ localStorage.removeItem('risp');
 
     n_Domanda++;
     bottoneInvia.disabled = true;
+    bottoneSi.disabled = true;
+    bottoneNo.disabled = true;
+    risposta1.disabled = true;
+    risposta2.disabled = true;
     testoProssima.style.display = "inline";
     bottoneNuova.style.display = "inline";
 
@@ -79,15 +84,19 @@ localStorage.removeItem('risp');
         localStorage.removeItem('risp');
         localStorage.setItem('risp','si');
         bottoneInvia.disabled=false;
-        bottoneSi.disabled=true;
-        bottoneNo.disabled=true;
+        bottoneSi.style.background = "blue";
+        bottoneNo.style.background = "#e67e22";
+        //bottoneSi.disabled=true;
+        //bottoneNo.disabled=true;
     }
     bottoneNo.onclick = function (){
         localStorage.removeItem('risp');
         localStorage.setItem('risp','no');
         bottoneInvia.disabled=false;
-        bottoneSi.disabled=true;
-        bottoneNo.disabled=true;
+        bottoneNo.style.background = "blue";
+        bottoneSi.style.background = "#e67e22";
+        //bottoneSi.disabled=true;
+        //bottoneNo.disabled=true;
     }
     //fine bottoni si e no
 
@@ -108,7 +117,7 @@ localStorage.removeItem('risp');
 
                 if(n_Domanda==24){
                     var tesNew = document.getElementById("testoNext");
-                    tesNew.textContent  = "FINISH -->";
+                    tesNew.textContent  = "FINISCI -->";
                 }
 
                 testo_nDomanda.textContent = n_Domanda;
@@ -132,7 +141,9 @@ localStorage.removeItem('risp');
 
                 //NUOVE DOMANDE ----  ----  ----
 
-                testoDomanda.innerHTML = domande[n_Domanda][0];
+                testoDomanda.innerHTML = domande[n_Domanda][0] + "<br><i style='font-size:30px'>Nome e Cognome</i>";
+                autore.innerHTML = 'Autore: ' + domande[n_Domanda][3];
+
 
                 var tipodopo = domande[n_Domanda][1];
 
@@ -140,6 +151,7 @@ localStorage.removeItem('risp');
                     bottoneSi.style.display = "none";
                     bottoneNo.style.display = "none";
                     risposta1.style.display = "inline";
+                    risposta1.disabled = false;
                     risposta2.style.display = "none";
                 }
 
@@ -148,6 +160,8 @@ localStorage.removeItem('risp');
                     bottoneNo.style.display = "none";
                     risposta1.style.display = "inline";
                     risposta2.style.display = "inline";
+                    risposta1.disabled = false;
+                    risposta2.disabled = false;
                 }
 
                 if(tipodopo == 3){
@@ -162,7 +176,10 @@ localStorage.removeItem('risp');
 
             }
             else{
+                localStorage.removeItem("score");
                 localStorage.setItem("score", punti);
+                localStorage.removeItem("finito");
+                localStorage.setItem("finito", "si");
                 window.location.href = "risultati.html";
 
             }

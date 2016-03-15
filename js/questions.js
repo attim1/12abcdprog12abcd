@@ -77,7 +77,7 @@ var domande = [
                 "Francesco Pozzi", //risposta giusta
                 "Marco Racioppi", //autore
             ],
-    /*16*/	["Tra le foto delle lapidi, ce n'&egrave; una in memoria di due fratelli, entrambi nati a Cremona verso la fine del XIX secolo: uno &grave; stato ucciso da una granata nemica, l'altro &egrave; deceduto a causa di una malattia. Sapresti trovarla?",
+    /*16*/	["Tra le foto delle lapidi, ce n'&egrave; una in memoria di due fratelli, entrambi nati a Cremona verso la fine del XIX secolo: uno &egrave; stato ucciso da una granata nemica, l'altro &egrave; deceduto a causa di una malattia. Sapresti trovarla?",
                 "1", //numero risposte
                 "I fratelli Ardenghi", //risposta giusta    lkadaslkdasdaslkdjdsalkjdskjsadbadskjdsa da guardare
                 "Marco Fiameni", //autore
