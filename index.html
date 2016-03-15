@@ -19,14 +19,14 @@
             </div>
             <div id="insName" class="insName">
                 <span class="input input--haruki">
-                    <input class="input__field input__field--haruki" type="text" id="input-1" />
-                    <label class="input__label input__label--haruki" for="input-1">
+                    <input class="input__field input__field--haruki" type="text" id="name" required />
+                    <label class="input__label input__label--haruki" for="name">
                         <span class="input__label-content input__label-content--haruki">Inserisci il tuo nome</span>
                     </label>
                 </span>
             </div>
             <div id="startA">
-                <input type="button" name="button1" class="btn orange border_radius indexButton" onclick="start('.indexButton'); start('.insName'); start2('.jj1'); start2('.jj3'); start3('.jj2')" value="START" /><br>
+                <input type="button" name="button1" class="btn orange border_radius indexButton" onclick="inizia();" value="START" /><br>
             </div>
         </center>
         <script src="js/classie.js"></script>
@@ -64,6 +64,22 @@
                     }
                 }
             })();
+
+            function inizia(){
+                var user = document.getElementById("name").value;
+                if(user == ""){
+                    alert("Inserire Nome!!!");
+                }
+                else{
+                    localStorage.removeItem("name");
+                    localStorage.setItem("name", user);
+                    start('.indexButton');
+                    start('.insName');
+                    start2('.jj1');
+                    start2('.jj3');
+                    start3('.jj2');
+                }
+            }
         </script>
     </body>
 </html>	
