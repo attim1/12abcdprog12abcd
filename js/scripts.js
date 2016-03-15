@@ -113,11 +113,11 @@ localStorage.removeItem('risp');
         //$('#dm3').removeClass().addClass('animated flipOutY');
         //$('#dm1').removeClass().addClass('animated flipOutY').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 
-            if(n_Domanda<=24){
+            if(n_Domanda<=3){
 
-                if(n_Domanda==24){
+                if(n_Domanda==3){
                     var tesNew = document.getElementById("testoNext");
-                    tesNew.textContent  = "FINISH -->";
+                    tesNew.textContent  = "FINISCI -->";
                 }
 
                 testo_nDomanda.textContent = n_Domanda;
@@ -176,7 +176,10 @@ localStorage.removeItem('risp');
 
             }
             else{
+                localStorage.removeItem("score");
                 localStorage.setItem("score", punti);
+                localStorage.removeItem("finito");
+                localStorage.setItem("finito", "si");
                 window.location.href = "risultati.html";
 
             }

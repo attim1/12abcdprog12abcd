@@ -9,6 +9,19 @@
         <link href="css/demo.css" rel="stylesheet">
         <title>QUIZ </title>
         <script type="text/javascript" src="js/indexAnimation.js"></script>
+        <script>
+            function init(){
+                localStorage.removeItem("finito");
+                localStorage.removeItem("score");
+                localStorage.removeItem("name");
+                if(localStorage.getItem("erroreName") == "si"){
+                    localStorage.removeItem("erroreName");
+                    var erd = document.getElementById("erroreD");
+                    erd.innerHTML = "-!!- Inserisci il nome -!!-";
+                }
+            }
+            $(document).ready(function(){ init() })
+        </script>
     </head>
     <body style="background-image:URL(images/background/sfondo.jpg);">
         <center>
@@ -17,6 +30,7 @@
                 <h1 class="jj2"> QUIZ </h1>
                 <h1 class="jj3"> -------------------------------------------</h1>
             </div>
+            <div id="erroreD" style="color:red; font-family:Arial; font-weight:bold;"></div><br>
             <div id="insName" class="insName">
                 <span class="input input--haruki">
                     <input class="input__field input__field--haruki" type="text" id="name" required />
