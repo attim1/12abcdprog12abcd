@@ -72,7 +72,7 @@ localStorage.removeItem('risp');
                 }
                 bottoneGen.style.background = "red";
                 casellaPunti.style.background = "#FF0000";
-                sbagliato = 1;
+                //sbagliato = 1;
             }
         }
 
@@ -82,18 +82,9 @@ localStorage.removeItem('risp');
         desc_pop.innerHTML = descrizione[n_Domanda][1];
     }*/
 
-    if (sbagliato == 1 || descrizione[n_Domanda][1] != "..."){
+    if (sbagliato == 1){
         linkDes.style.display = "inline";
-        if(sbagliato == 1 && descrizione[n_Domanda][1] == "..."){
-            desc_pop.innerHTML = descrizione[n_Domanda][0];
-        }
-        if(sbagliato == 1 && descrizione[n_Domanda][1] != "..."){
-            desc_pop.innerHTML = descrizione[n_Domanda][0] + descrizione[n_Domanda][1];
-        }
-        if(sbagliato == 0 && descrizione[n_Domanda][1] != "..."){
-            desc_pop.innerHTML = descrizione[n_Domanda][1];
-        }
-
+        desc_pop.innerHTML = descrizione[n_Domanda][0];
     }
 
 
@@ -172,7 +163,7 @@ localStorage.removeItem('risp');
 
                 //NUOVE DOMANDE ----  ----  ----
 
-                testoDomanda.innerHTML = domande[n_Domanda][0] + "<br><i style='font-size:30px'>Nome e Cognome</i>";
+                testoDomanda.innerHTML = domande[n_Domanda][0];
                 autore.innerHTML = 'Autore: ' + domande[n_Domanda][3];
 
 

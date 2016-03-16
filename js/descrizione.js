@@ -6,11 +6,11 @@ var descrizione = [
             ],
     /*3*/	["La risposta giusta &egrave; Ettore Galli e Luigi Marconi.","..."
             ],
-    /*4*/	["La risposta giusta &egrave; Quattro.","<br> Le quattro lapidi sono di: Pietro Camelli, Alfredo Ghisoli, Francesco Pozzi, Giuseppe Pelegni."
+    /*4*/	["La risposta giusta &egrave; 4, e sono: <br> Pietro Camelli, Alfredo Ghisoli, Francesco Pozzi, Giuseppe Pelegni.","<br> Le quattro lapidi sono di: Pietro Camelli, Alfredo Ghisoli, Francesco Pozzi, Giuseppe Pelegni."
             ],
     /*5*/	["La risposta giusta &egrave; Annibale Cassani.","..."
             ],
-    /*6*/	["La risposta giusta &egrave; ","..." //da mettere a posto lakdnasmscnslkdsvanmv,adnkl
+    /*6*/	["La risposta giusta &egrave; spada e alloro","..." //messa a posto
             ],
     /*7*/	["","Un monumento &egrave; stato dedicato ai soldati stranieri."
             ],
@@ -30,9 +30,9 @@ var descrizione = [
             ],
     /*15*/	["La risposta giusta &egrave; Francesco Pozzi.","..."
             ],
-    /*16*/	["La risposta giusta &egrave; ","..." //da mettere a posto salkdnlckdsnlkadvskladsdvnvlsadkvlksdn
+    /*16*/	["La risposta giusta &egrave; Gino Ardenghi e Carlo Ardenghi.","..." //da mettere a posto salkdnlckdsnlkadvskladsdvnvlsadkvlksdn
             ],
-    /*17*/	["La risposta giusta &egrave; Palmiro Balestrieri.","..."
+    /*17*/	["La risposta giusta &egrave; Palmiro Balestreri.","..."
             ],
     /*18*/	["La risposta giusta &egrave; Giuseppe Boselli.","..."
             ],

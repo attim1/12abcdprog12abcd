@@ -29,7 +29,6 @@
     var speed = 500;
     link = setInterval(function() {
     i++;
-    $(".apri").css('background-color', i%2 == 1 ? '#FFFF00' : '#ADFF2F');
+    $(".apri").css('background-color', i%2 == 1 ? '#FFFF00' : '#fa0000');
     },speed);
     });
-  
