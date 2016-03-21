@@ -17,6 +17,7 @@ var n_Domanda = 1;
     var bottoneSi = document.form1["rispostaBtSi"];
     var bottoneNo = document.form1["rispostaBtNo"];
     var autore = document.getElementById('autore');
+    var bottoneInvia2 = document.getElementById("bt_Invia2");
 
     var bottoneInvia = document.getElementById("bt_Invia");
 localStorage.removeItem('risp');
@@ -211,3 +212,17 @@ localStorage.removeItem('risp');
            // $('#dm2').removeClass().addClass('animated flipInYa');
            // $('#dm3').removeClass().addClass('animated flipInY');
         }
+
+    bottoneInvia2.onclick = function (){
+        var invia2 = window.confirm("Sei sicuro di voler inviare?");
+        if(invia2){
+            localStorage.removeItem("score");
+            localStorage.setItem("score", punti);
+            localStorage.removeItem("finito");
+            localStorage.setItem("finito", "si");
+            window.location.href = "risultati.html";
+        }
+        else{
+
+        }
+    }
